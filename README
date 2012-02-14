@@ -1,0 +1,48 @@
+/*! Copyright (c) 2012 Jepser Bernardino (http://jepserbernardino.com)
+ * Licensed under the MIT License (LICENSE.txt).
+ *
+ * Thanks to: http://royalestudios.com/ for help.
+ *
+ * Version: 1.0
+ * 
+ * Requires: 1.5+
+ */
+
+How to install:
+
+It requires jQuery 1.5+ and to add the script on the header of your <head />
+
+Structure:
+
+<div class="scroller">
+	<ul class="items">
+		<li>Elements</li>	
+		<li>Elements</li>
+	</ul>
+</div>
+<a href="#" class="prev">Prev</a>
+<a href="#" class="next">Next</a>
+
+Javascript:
+
+jQuery(function($){
+	$('.scroller').scroller();
+});
+
+Options:.
+wrapper : the element which contains the listed elements, default "items"
+speed : speed in miliseconds, default 300
+current : class for the current element, default '.current'
+prev : Class for the prev button, default '.prev'
+next : Class for teh next button, default '.next'
+direction : If you want it to be vertical or horizontal, now just 'left' by default
+
+API
+
+Set as data object. 
+
+var scroller = $('scroller').data('scroller');
+
+getSize() : Returns the current number of items to scroll
+moveTo(index, speed) : moves the scroller to a custom position
+refresh : use it if you add elements by ajax
