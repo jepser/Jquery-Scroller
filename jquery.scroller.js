@@ -1,3 +1,12 @@
+/*! Copyright (c) 2012 Jepser Bernardino (http://jepserbernardino.com)
+ * Licensed under the MIT License (LICENSE.txt).
+ *
+ * Thanks to: http://royalestudios.com/ for help.
+ *
+ * Version: 1.0
+ * 
+ * Requires: 1.5+
+ */
 (function( $ ) {
 	
 	var methods = {
